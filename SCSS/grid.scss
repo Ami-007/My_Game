@@ -1,0 +1,15 @@
+.sudoku_grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto ;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    border: 2px solid rgb(19, 21, 21);
+    background-color: rgb(43, 44, 40);
+    border-radius: 50px;
+    height: 50%;
+    width: 50%;
+    margin: 2%;
+    padding: 3%;
+    justify-items: center;
+    align-items: center;
+
+}
