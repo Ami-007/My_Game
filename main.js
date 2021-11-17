@@ -1,4 +1,7 @@
 // Have a grid, with shown, pre selected icons in it
+
+
+
 // pre selected icons are greyed out slighty, inputtable squares are white.
 
 // when player figures out a new incon placement-
