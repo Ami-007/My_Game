@@ -4,22 +4,24 @@
   grid-template-rows: 1fr 1fr 1fr 1fr;
   border: 2px solid black;
   border-radius: 50px;
-  height: 750px;
-  width: 750px;
-  margin: 2%;
-  padding: 5%;
+  height: 700px;
+  width: 700px;
+  margin: auto;
+  padding: 3%;
+  background-color: #c8d9e9;
 }
 .sudoku_grid__col {
   height: 100%;
   width: 100%;
   border: 1px solid black;
+  background-color: aliceblue;
+  display: flex;
 }
 .sudoku_grid__col:nth-child(1) {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-color: red;
   border-top-left-radius: 50px;
 }
 .sudoku_grid__col:nth-child(2) {
@@ -27,7 +29,6 @@
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-color: orange;
   border-right: 2px solid black;
 }
 .sudoku_grid__col:nth-child(3) {
@@ -35,14 +36,12 @@
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-color: yellow;
 }
 .sudoku_grid__col:nth-child(4) {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-color: green;
   border-top-right-radius: 50px;
 }
 .sudoku_grid__col:nth-child(5) {
@@ -50,7 +49,6 @@
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  background-color: blue;
   border-bottom: 2px solid black;
 }
 .sudoku_grid__col:nth-child(6) {
@@ -58,7 +56,6 @@
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-  background-color: indigo;
   border-bottom: 2px solid black;
   border-right: 2px solid black;
 }
@@ -67,7 +64,6 @@
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  background-color: violet;
   border-bottom: 2px solid black;
 }
 .sudoku_grid__col:nth-child(8) {
@@ -75,7 +71,6 @@
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
-  background-color: royalblue;
   border-bottom: 2px solid black;
 }
 .sudoku_grid__col:nth-child(9) {
@@ -83,14 +78,12 @@
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: rosybrown;
 }
 .sudoku_grid__col:nth-child(10) {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: aqua;
   border-right: 2px solid black;
 }
 .sudoku_grid__col:nth-child(11) {
@@ -98,21 +91,18 @@
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: brown;
 }
 .sudoku_grid__col:nth-child(12) {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: chartreuse;
 }
 .sudoku_grid__col:nth-child(13) {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 4;
   grid-row-end: 5;
-  background-color: darkkhaki;
   border-bottom-left-radius: 50px;
 }
 .sudoku_grid__col:nth-child(14) {
@@ -120,7 +110,6 @@
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
-  background-color: firebrick;
   border-right: 2px solid black;
 }
 .sudoku_grid__col:nth-child(15) {
@@ -128,42 +117,61 @@
   grid-column-end: 4;
   grid-row-start: 4;
   grid-row-end: 5;
-  background-color: goldenrod;
 }
 .sudoku_grid__col:nth-child(16) {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 4;
   grid-row-end: 5;
-  background-color: hotpink;
   border-bottom-right-radius: 50px;
 }
 
-.helpers {
+.helper {
   height: 20%;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-content: center;
-  margin: 2%;
+  justify-content: center;
 }
-.helpers button {
-  font-size: 15px;
+.helper__button {
+  font-size: 25px;
+  padding: 1%;
+  margin: 2%;
+  background-color: white;
+  border-radius: 20px;
 }
 
 .icons {
-  height: 40%;
-  width: 80%;
+  margin: auto;
+  height: 50%;
+  width: 50%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .icons__button {
-  height: 80%;
-  width: 80%;
-  margin: 2%;
+  background-color: white;
+  height: 100%;
+  width: 10%;
+  font-size: 40px;
   display: flex;
   justify-content: center;
+}
+
+#fire-icon {
+  color: red;
+}
+
+#wind-icon {
+  color: #792fbe;
+}
+
+#wave-icon {
+  color: #0051ff;
+}
+
+#earth-icon {
+  color: green;
 }
 
 * {

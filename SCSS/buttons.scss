@@ -1,31 +1,50 @@
-.helpers {
+.helper {
     height: 20%;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-    margin: 2%;
+    justify-content: center;
 
-    button {
-        font-size: 15px;
+   &__button {
+        font-size: 25px;
+        padding: 1%;
+        margin: 2%;
+        background-color: white;
+        border-radius: 20px;
     }
 }
 
 
 .icons {
-    height: 40%;
-    width: 80%;
+    margin: auto;
+    height: 50%;
+    width: 50%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
     &__button {
-        height: 80%;
-        width: 80%;
-        margin: 2%;
+        background-color: white;
+        height: 100%;
+        width: 10%;
+        font-size: 40px;
         display: flex;
         justify-content: center;
-        
     }
 }
 
+#fire-icon {
+    color: red;
+}
+
+#wind-icon {
+    color: rgb(121, 47, 190);
+}
+
+#wave-icon {
+    color: rgb(0, 81, 255);
+}
+
+#earth-icon {
+    color: green;
+}
