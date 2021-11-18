@@ -1,8 +1,12 @@
+
+// select the icons and boxes due to be used
+
+
 // Have a grid, with shown, pre selected icons in it
 
 
 
-// pre selected icons are greyed out slighty, inputtable squares are white.
+// pre selected icons in squares that are greyed out slighty, inputtable squares are white.
 
 // when player figures out a new incon placement-
 // they select the square and then the icon to go into that square

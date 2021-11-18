@@ -3,18 +3,19 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   border: 2px solid black;
-  border-radius: 50px;
-  height: 700px;
-  width: 700px;
+  border-radius: 60px;
+  height: 500px;
+  width: 500px;
   margin: auto;
+  margin-top: 5%;
   padding: 3%;
-  background-color: #c8d9e9;
+  background-color: #00274b;
 }
 .sudoku_grid__col {
   height: 100%;
   width: 100%;
   border: 1px solid black;
-  background-color: aliceblue;
+  background-color: #f6f7f0;
   display: flex;
 }
 .sudoku_grid__col:nth-child(1) {
@@ -23,6 +24,7 @@
   grid-row-start: 1;
   grid-row-end: 2;
   border-top-left-radius: 50px;
+  background-color: #d4d4d4;
 }
 .sudoku_grid__col:nth-child(2) {
   grid-column-start: 2;
@@ -36,6 +38,7 @@
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
+  background-color: #d4d4d4;
 }
 .sudoku_grid__col:nth-child(4) {
   grid-column-start: 4;
@@ -58,6 +61,7 @@
   grid-row-end: 3;
   border-bottom: 2px solid black;
   border-right: 2px solid black;
+  background-color: #d4d4d4;
 }
 .sudoku_grid__col:nth-child(7) {
   grid-column-start: 3;
@@ -72,6 +76,7 @@
   grid-row-start: 2;
   grid-row-end: 3;
   border-bottom: 2px solid black;
+  background-color: #d4d4d4;
 }
 .sudoku_grid__col:nth-child(9) {
   grid-column-start: 1;
@@ -97,6 +102,7 @@
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 4;
+  background-color: #d4d4d4;
 }
 .sudoku_grid__col:nth-child(13) {
   grid-column-start: 1;
@@ -117,6 +123,7 @@
   grid-column-end: 4;
   grid-row-start: 4;
   grid-row-end: 5;
+  background-color: #d4d4d4;
 }
 .sudoku_grid__col:nth-child(16) {
   grid-column-start: 4;
@@ -140,6 +147,9 @@
   background-color: white;
   border-radius: 20px;
 }
+.helper__button:hover {
+  box-shadow: 2px 2px 2px #00003f;
+}
 
 .icons {
   margin: auto;
@@ -151,11 +161,17 @@
 }
 .icons__button {
   background-color: white;
+  border-radius: 100px;
   height: 100%;
-  width: 10%;
-  font-size: 40px;
+  width: 15%;
+  margin: 2%;
+  padding: 1%;
+  font-size: 180%;
   display: flex;
   justify-content: center;
+}
+.icons__button:hover {
+  box-shadow: 2px 2px 2px #00003f;
 }
 
 #fire-icon {
