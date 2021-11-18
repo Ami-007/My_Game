@@ -1,6 +1,13 @@
 
 // select the icons and boxes due to be used
-
+const elementIcons = document.querySelectorAll(".icons_button");
+const tiles = document.querySelectorAll(".sudoku-grid__col");
+const fireIcon = document.getElementById("#fire-icon");
+const windIcon = document.getElementById("wind-icon");
+const waveIcon = document.getElementById("wave-icon");
+const earthIcon = document.getElementById("earth-icon");
+const eraseButton = document.querySelector(".erase")
+const checkButton = document.querySelector(".check")
 
 // Have a grid, with shown, pre selected icons in it
 
