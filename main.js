@@ -8,16 +8,18 @@ const waveIcon = document.getElementById("wave-icon");
 const earthIcon = document.getElementById("earth-icon");
 const eraseButton = document.querySelector(".erase");
 const checkButton = document.querySelector(".check");
-const clearButton = document.querySelector(".clear");
+const resetButton = document.querySelector(".reset");
 
 
 for (let i = 0; i < tiles.length; i++) {
     const tile = tiles[i];
-    clearButton.addEventListener("click", () => {
+    resetButton.addEventListener("click", () => {
         tile.innerHTML = "";
-        console.log("click");
     });
 };
+
+
+
 
 
 // when player figures out a new icon placement-
@@ -26,8 +28,8 @@ for (let i = 0; i < tiles.length; i++) {
 // there will be buttons to erase an answer and a button to check the answers
 // incorrect answers will be highlighted red until a new input.
 
-// Upon any input squares change to white colour
+// Upon any new input red squares change to white colour
 
-// can add extra challanges in new HTML pages
+// can add extra challenges in new HTML pages
 
 
