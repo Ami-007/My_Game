@@ -9,31 +9,31 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
-     <title>Easy Sudoku</title>
+     <title>Element Sudoku</title>
  </head>
   <!-- create my grid and buttons -->
 
  <body>
     <div class="sudoku_grid">
                 <div class="sudoku_grid__tile"><i class="fab fa-gripfire fire"></i></div>
-                <div class="sudoku_grid__tile input"></div>
+                <div id ="tile2" class="sudoku_grid__tile input"></div>
                 <div class="sudoku_grid__tile"><i class="fas fa-water wave"></i></div>
-                <div class="sudoku_grid__tile input"></div>
+                <div id ="tile4" class="sudoku_grid__tile input"></div>
 
-                <div class="sudoku_grid__tile input"></div>
+                <div id ="tile5"class="sudoku_grid__tile input"></div>
                 <div class="sudoku_grid__tile"><i class="fas fa-mountain earth"></i></div>
-                <div class="sudoku_grid__tile input"></div>
+                <div id ="tile7"class="sudoku_grid__tile input"></div>
                 <div class="sudoku_grid__tile"><i class="fab fa-gripfire fire"></i></div>
 
-                <div class="sudoku_grid__tile input"></div>
-                <div class="sudoku_grid__tile input"></div>
-                <div class="sudoku_grid__tile input"></div>
+                <div id ="tile9"class="sudoku_grid__tile input"></div>
+                <div id ="tile10"class="sudoku_grid__tile input"></div>
+                <div id ="tile11"class="sudoku_grid__tile input"></div>
                 <div class="sudoku_grid__tile"><i class="fas fa-wind wind"></i></div>
 
-                <div class="sudoku_grid__tile input"></div>
-                <div class="sudoku_grid__tile input"></div>
+                <div id ="tile13"class="sudoku_grid__tile input"></div>
+                <div id ="tile14"class="sudoku_grid__tile input"></div>
                 <div class="sudoku_grid__tile"><i class="fas fa-mountain earth"></i></div>
-                <div class="sudoku_grid__tile input"></div>
+                <div id ="tile16"class="sudoku_grid__tile input"></div>
     </div>
 
     <div class="helper">
@@ -48,6 +48,13 @@
         <button id="wave-btn" class="icons__button" ><i class="fas fa-water wave"></i></button>
         <button id="earth-btn" class="icons__button"><i class="fas fa-mountain earth"></i></button>
     </div>
+    <p> This game follows sudoku rules. You may only have one of each icon in every row, column and 2 x 2 sqaure.
+         Use the given icons to figure out the placement of the rest.
+         To input an icon, click on the chosen button and then click the box you want it to apply to.
+         Use the Reset Board button to reset the board back to the start.
+         Use the check button to verify your results. If a box turns red, the icon is incorrect,
+         if the box turns green, you're onto a win.  
+    </p>
 
     <script src="main.js"></script>
  </body>
