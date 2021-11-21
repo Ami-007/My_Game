@@ -200,6 +200,11 @@
   color: green;
 }
 
+.clicked {
+  background-color: #91a8da;
+  box-shadow: 2px 2px 2px darkslateblue;
+}
+
 * {
   margin: 0;
   padding: 0;
