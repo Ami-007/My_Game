@@ -166,6 +166,10 @@
     }
 }
 
+.active {
+    background-color: aliceblue;
+    box-shadow: 2px 2px 2px 2px rgb(3, 3, 68);
+}
 
 // &:nth-child(18) {
 //     grid-column-start: 2;

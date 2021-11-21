@@ -19,6 +19,12 @@ for (let i = 0; i < tiles.length; i++) {
 };
 
 
+for (let i = 0; i < tiles.length; i++) {
+    const tile = tiles[i];
+    tile.addEventListener("click", () => {
+        tile.classList.toggle("active");
+});
+};
 
 
 

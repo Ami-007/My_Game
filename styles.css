@@ -138,6 +138,11 @@
   font-size: 60px;
 }
 
+.active {
+  background-color: aliceblue;
+  box-shadow: 2px 2px 2px 2px #030344;
+}
+
 .helper {
   height: 20%;
   width: 100%;
