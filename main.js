@@ -13,7 +13,6 @@ const earthButton = document.querySelector("#earth-btn");
 const checkButton = document.querySelector(".check");
 const resetButton = document.querySelector(".reset");
 
-
 // GET CORRECT ICON
 // function to run an if else statement to select the correct icon when clicked
 
@@ -34,85 +33,88 @@ const getIcon = () => {
     };
 };
 
+
 const winSolution = () => {
-    
-    tile2 = document.getElementById("tile2"),
-    tile4 = document.getElementById("tile4"),
-    tile5 = document.getElementById("tile5"),
-    tile7 = document.getElementById("tile7"),
-    tile9 = document.getElementById("tile9"),
-    tile10 = document.getElementById("tile10"),
-    tile11 = document.getElementById("tile11"),
-    tile13 = document.getElementById("tile13"),
-    tile14 = document.getElementById("tile14"),
+
+    for (let i = 0; i < tiles.length; i++) {
+        const tile = tiles[i];
+        tile.classList.remove("correct", "incorrect");
+    };
+
+    tile2 = document.getElementById("tile2");
+    tile4 = document.getElementById("tile4");
+    tile5 = document.getElementById("tile5");
+    tile7 = document.getElementById("tile7");
+    tile9 = document.getElementById("tile9");
+    tile10 = document.getElementById("tile10");
+    tile11 = document.getElementById("tile11");
+    tile13 = document.getElementById("tile13");
+    tile14 = document.getElementById("tile14");
     tile16 = document.getElementById("tile16");
-    colouredTiles = Array.from(document.querySelectorAll(".icons__button"))
+    
 
+    {
+        if (tile2.innerHTML === windIcon) {
+            tile2.classList.add("correct");
+        } else {
+            tile2.classList.add("incorrect");
+        };
 
-    {if (tile2.innerHTML === windIcon) {
-        tile2.classList.add("correct"); 
-    } else {
-        tile2.classList.add("incorrect");
+        if (tile4.innerHTML === earthIcon) {
+            tile4.classList.add("correct");
+        } else {
+            tile4.classList.add("incorrect");
+        };
+
+        if (tile5.innerHTML === waveIcon) {
+            tile5.classList.add("correct");
+        } else {
+            tile5.classList.add("incorrect");
+        };
+
+        if (tile7.innerHTML === windIcon) {
+            tile7.classList.add("correct");
+        } else {
+            tile7.classList.add("incorrect");
+        };
+
+        if (tile9.innerHTML === earthIcon) {
+            tile9.classList.add("correct");
+        } else {
+            tile9.classList.add("incorrect");
+        };
+
+        if (tile10.innerHTML === waveIcon) {
+            tile10.classList.add("correct");
+        } else {
+            tile10.classList.add("incorrect");
+        };
+
+        if (tile11.innerHTML === fireIcon) {
+            tile11.classList.add("correct");
+        } else {
+            tile11.classList.add("incorrect");
+        };
+
+        if (tile13.innerHTML === windIcon) {
+            tile13.classList.add("correct");
+        } else {
+            tile13.classList.add("incorrect");
+        };
+
+        if (tile14.innerHTML === fireIcon) {
+            tile14.classList.add("correct");
+        } else {
+            tile14.classList.add("incorrect");
+        };
+
+        if (tile16.innerHTML === waveIcon) {
+            tile16.classList.add("correct");
+        } else {
+            tile16.classList.add("incorrect");
+        };
     };
-
-    if (tile4.innerHTML === earthIcon) {
-        tile4.classList.add("correct"); 
-    } else {
-        tile4.classList.add("incorrect");
-    };
-
-    if (tile5.innerHTML === waveIcon) {
-        tile5.classList.add("correct"); 
-    } else {
-        tile5.classList.add("incorrect");
-    };
-
-    if (tile7.innerHTML === windIcon) {
-        tile7.classList.add("correct"); 
-    } else {
-        tile7.classList.add("incorrect");
-    };
-
-    if (tile9.innerHTML === earthIcon) {
-        tile9.classList.add("correct"); 
-    } else {
-        tile9.classList.add("incorrect");
-    };
-
-    if (tile10.innerHTML === waveIcon) {
-        tile10.classList.add("correct"); 
-    } else {
-        tile10.classList.add("incorrect");
-    };
-
-    if (tile11.innerHTML === fireIcon) {
-        tile11.classList.add("correct"); 
-    } else {
-        tile11.classList.add("incorrect");
-    };
-
-    if (tile13.innerHTML === windIcon) {
-        tile13.classList.add("correct"); 
-    } else {
-        tile13.classList.add("incorrect");
-    };
-
-    if (tile14.innerHTML === fireIcon) {
-        tile14.classList.add("correct"); 
-    } else {
-        tile14.classList.add("incorrect");
-    };
-
-    if (tile16.innerHTML === waveIcon) {
-        tile16.classList.add("correct"); 
-    } else {
-        tile16.classList.add("incorrect");
-    };
-};
-    colouredTiles.forEach((tile) => {
-    tile.classList.remove("correct", "incorrect");
-    console.log(tile);
-});
+   
 };
 
 
@@ -169,7 +171,7 @@ for (let i = 0; i < tiles.length; i++) {
 
 checkButton.addEventListener("click", () => {
     winSolution();
-})
+});
 
 // When the erase button is clicked, it removes the HTML from the selected tile
 
@@ -178,4 +180,3 @@ checkButton.addEventListener("click", () => {
 // Upon any new input red squares change to white colour
 
 // can add extra challenges in new HTML pages
-
