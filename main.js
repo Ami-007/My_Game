@@ -1,6 +1,6 @@
 
 // select the icons and tiles to be used
-// const elementIcons = document.querySelectorAll(".icons_button");
+const elementIcons = document.querySelectorAll(".icons__button");
 const tiles = document.querySelectorAll(".input");
 const fireIcon = document.querySelector(".fire");
 const windIcon = document.querySelector(".wind");
@@ -14,7 +14,7 @@ const checkButton = document.querySelector(".check");
 const resetButton = document.querySelector(".reset");
 const startButton = document.querySelector(".start");
 
-
+// console.log(elementIcons);
 
 function getIcon() {
     for (let i = 0; i < tiles.length; i++) {
@@ -35,6 +35,28 @@ function getIcon() {
 };
 };
 
+for (let i = 0; i < elementIcons.length; i++) {
+    const icon = elementIcons[i];
+    icon.addEventListener("click", () => {
+        icon.classList.toggle("clicked");
+})
+};
+
+
+
+// fireButton.classList.toggle("clicked");
+//     windButton.classList.toggle("clicked");
+//     waveButton.classList.toggle("clicked");
+//     earthButton.classList.toggle("clicked");
+
+
+for (let i = 0; i < tiles.length; i++) {
+    const tile = tiles[i];
+    resetButton.addEventListener("click", () => {
+        tile.innerHTML = "";
+    });
+};
+
 
 for (let i = 0; i < tiles.length; i++) {
         const tile = tiles[i];
@@ -42,6 +64,7 @@ for (let i = 0; i < tiles.length; i++) {
             tile.classList.toggle("active") && getIcon();
         });
 };
+
 
 
 
@@ -77,13 +100,6 @@ for (let i = 0; i < tiles.length; i++) {
 //     };
 
 
-
-for (let i = 0; i < tiles.length; i++) {
-    const tile = tiles[i];
-    resetButton.addEventListener("click", () => {
-        tile.innerHTML = "";
-    });
-};
 
 
 // for (let i = 0; i < tiles.length; i++) {
