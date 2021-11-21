@@ -14,8 +14,6 @@ const checkButton = document.querySelector(".check");
 const resetButton = document.querySelector(".reset");
 const startButton = document.querySelector(".start");
 
-// console.log(elementIcons);
-
 function getIcon() {
     for (let i = 0; i < tiles.length; i++) {
         const tile = tiles[i];
@@ -42,14 +40,6 @@ for (let i = 0; i < elementIcons.length; i++) {
 })
 };
 
-
-
-// fireButton.classList.toggle("clicked");
-//     windButton.classList.toggle("clicked");
-//     waveButton.classList.toggle("clicked");
-//     earthButton.classList.toggle("clicked");
-
-
 for (let i = 0; i < tiles.length; i++) {
     const tile = tiles[i];
     resetButton.addEventListener("click", () => {
@@ -57,60 +47,12 @@ for (let i = 0; i < tiles.length; i++) {
     });
 };
 
-
 for (let i = 0; i < tiles.length; i++) {
         const tile = tiles[i];
         tile.addEventListener("click", () => {
             tile.classList.toggle("active") && getIcon();
         });
 };
-
-
-
-
-
-// startButton.addEventListener("click", () => {
-//         fireButton.classList.add("clicked");
-//         windButton.classList.add("clicked");
-//         waveButton.classList.add("clicked");
-//         earthButton.classList.add("clicked");
-// });
-
-
-// for (let i = 0; i < tiles.length; i++) {
-//     const tile = tiles[i];
-//     tile.addEventListener("click", () => {
-//         tile.classList.toggle("active")
-
-//     });
-        // if (tile.classList.contains("active")) {
-
-        //     if (fireButton.classList.contains("clicked")) {
-        //         tile.appendChild(fireIcon);
-        //     } else if (windButton.classList.contains("clicked")) {
-        //         tile.appendChild(windIcon);
-        //     } else if (waveButton.classList.contains("clicked")) {
-        //         tile.appendChild(waveIcon);
-        //     } else if (earthButton.classList.contains("clicked")) {
-        //         tile.appendChild(earthIcon);
-        //     } else {
-        //         alert("Please select an input");
-        //     };
-//         }
-//     };
-
-
-
-
-// for (let i = 0; i < tiles.length; i++) {
-//     const tile = tiles[i];
-//     tile.addEventListener("click", () => {
-//     if (fireIcon.classList.contains("fire")) {
-//     tile.appendChild(fireIcon); 
-// };
-// });
-// };
-
 
 // When the erase button is clicked, it removes the html from the selected tile
 
