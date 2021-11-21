@@ -33,13 +33,27 @@ const getIcon = () => {
     };
 };
 
+const resetTiles = (resetHtml) => {
+    for (let i = 0; i < tiles.length; i++) {
+        const tile = tiles[i];
+
+        if (resetHtml) {
+            tile.innerHTML = "";
+        }
+
+        tile.classList.remove("correct", "incorrect");
+    };
+
+};
+
+resetButton.addEventListener("click", () => {
+    resetTiles(true);
+});
+
 
 const winSolution = () => {
 
-    for (let i = 0; i < tiles.length; i++) {
-        const tile = tiles[i];
-        tile.classList.remove("correct", "incorrect");
-    };
+   resetTiles(false);
 
     tile2 = document.getElementById("tile2");
     tile4 = document.getElementById("tile4");
@@ -51,7 +65,7 @@ const winSolution = () => {
     tile13 = document.getElementById("tile13");
     tile14 = document.getElementById("tile14");
     tile16 = document.getElementById("tile16");
-    
+
 
     {
         if (tile2.innerHTML === windIcon) {
@@ -114,7 +128,7 @@ const winSolution = () => {
             tile16.classList.add("incorrect");
         };
     };
-   
+
 };
 
 
@@ -141,13 +155,19 @@ for (let i = 0; i < elementIcons.length; i++) {
 // Applying eventlistener to the reset button so it can clear inner HTML of tiles.
 
 
-for (let i = 0; i < tiles.length; i++) {
-    const tile = tiles[i];
-    resetButton.addEventListener("click", () => {
-        tile.innerHTML = "";
-        tile.classList.remove("correct", "incorrect");
-    });
-};
+// const resetAll = () => {
+//     for (let i = 0; i < tiles.length; i++) {
+//         const tile = tiles[i];
+//         tile.innerHTML = "";
+//         tile.classList.remove("correct", "incorrect");
+//     };
+
+// };
+
+// resetButton.addEventListener("click", () => {
+//     resetAll();
+// });
+
 
 
 // NESTED LOOP TO ENSURE ONLY ONE TILE CAN BE SELECTED AT A TIME
