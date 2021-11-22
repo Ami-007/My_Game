@@ -15,7 +15,7 @@ const resetButton = document.querySelector(".reset");
 //  resetTiles function
 // function contains for loop to loop through nodelist of tiles
 // and select individual tiles. Then runs an if statement to check if resetHTML parameter
-// if resetHTML parameter is met then innerHTML becomes blank string
+//  is met then innerHTML becomes blank string
 
 const resetTiles = (resetHtml) => {
     for (let i = 0; i < tiles.length; i++) {
