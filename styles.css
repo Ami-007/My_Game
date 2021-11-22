@@ -1,3 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/Image/parchment-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 235, 209, 0.61);
+}
+
+p {
+  font-family: "Estonia", cursive;
+  font-size: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
+
 .sudoku_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -143,11 +164,11 @@
 }
 
 .correct {
-  background-color: rgba(151, 243, 151, 0.548);
+  background-color: #a6e9a6;
 }
 
 .incorrect {
-  background-color: rgba(255, 72, 72, 0.61);
+  background-color: #ffa9a9;
 }
 
 .helper {
@@ -163,6 +184,7 @@
   margin: 2%;
   background-color: white;
   border-radius: 20px;
+  font-family: "Nunito", sans-serif;
 }
 .helper__button:hover {
   box-shadow: 2px 2px 2px #00003f;
@@ -208,16 +230,6 @@
 }
 
 .clicked {
-  background-color: #91a8da;
-  box-shadow: 2px 2px 2px darkslateblue;
-}
-
-.visible {
-  background-color: blue;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  background-color: #abcbe9;
+  box-shadow: 2px 2px 2px #00003f;
 }

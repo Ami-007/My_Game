@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    border: 2px solid black;
+    border: $border-black;
     border-radius: 60px;
     height: 500px;
     width: 500px;
@@ -14,7 +14,7 @@
     &__tile {
         height: 100%;
         width: 100%;
-        border: 1px solid black;
+        border: 1px solid $black;
         background-color: $colour-two;
         display: flex;
         justify-content: center;
@@ -36,7 +36,7 @@
             grid-column-end: 3;
             grid-row-start: 1;
             grid-row-end: 2;
-            border-right: 2px solid black;
+            border-right: $border-black;
         }
 
         &:nth-child(3) {
@@ -60,7 +60,7 @@
             grid-column-end: 2;
             grid-row-start: 2;
             grid-row-end: 3;
-            border-bottom: 2px solid black;
+            border-bottom: $border-black;
 
         }
 
@@ -69,8 +69,8 @@
             grid-column-end: 3;
             grid-row-start: 2;
             grid-row-end: 3;
-            border-bottom: 2px solid black;
-            border-right: 2px solid black;
+            border-bottom: $border-black;
+            border-right: $border-black;
             background-color: $remainTileColour;
 
         }
@@ -80,7 +80,7 @@
             grid-column-end: 4;
             grid-row-start: 2;
             grid-row-end: 3;
-            border-bottom: 2px solid black;
+            border-bottom: $border-black;
 
         }
 
@@ -89,7 +89,7 @@
             grid-column-end: 5;
             grid-row-start: 2;
             grid-row-end: 3;
-            border-bottom: 2px solid black;
+            border-bottom: $border-black;
             background-color: $remainTileColour;
         }
 
@@ -106,7 +106,7 @@
             grid-column-end: 3;
             grid-row-start: 3;
             grid-row-end: 4;
-            border-right: 2px solid black;
+            border-right: $border-black;
             ;
 
         }
@@ -140,7 +140,7 @@
             grid-column-end: 3;
             grid-row-start: 4;
             grid-row-end: 5;
-            border-right: 2px solid black;
+            border-right: $border-black;
             ;
         }
 

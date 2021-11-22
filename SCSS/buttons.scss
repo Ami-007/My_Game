@@ -9,11 +9,12 @@
         font-size: 25px;
         padding: 1%;
         margin: 2%;
-        background-color: white;
+        background-color: $button-background;
         border-radius: 20px;
+        font-family: $font-one;
 
         &:hover {
-            box-shadow: 2px 2px 2px rgb(0, 0, 63);
+            box-shadow: $box-shadow;
         }
     }
 }
@@ -28,7 +29,7 @@
     justify-content: center;
 
     &__button {
-        background-color: white;
+        background-color: $button-background;
         border-radius: 100px;;
         height: 100%;
         width: 15%;
@@ -39,32 +40,28 @@
         justify-content: center;
 
         &:hover {
-            box-shadow: 2px 2px 2px rgb(0, 0, 63);
+            box-shadow: $box-shadow;
         }
     }
 }
 
 .fire {
-    color: red;
+    color: $fire-colour;
 }
 
 .wind {
-    color: rgb(121, 47, 190);
+    color: $wind-colour;
 }
 
 .wave {
-    color: rgb(0, 81, 255);
+    color: $wave-colour;
 }
 
 .earth {
-    color: green;
+    color: $earth-colour;
 }
 
 .clicked {
-    background-color:rgb(145, 168, 218);
-    box-shadow: 2px 2px 2px darkslateblue;
-}
-
-.visible {
-    background-color: blue;
+    background-color:$activeColour;
+    box-shadow: $box-shadow;
 }

@@ -1,4 +1,14 @@
 body {
-    height: 100vh;
-    width: 100%;
+   background-image: url(/Image/parchment-background.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+p {
+    
+    font-family: $font-two;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
 }
