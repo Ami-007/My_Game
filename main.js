@@ -1,4 +1,3 @@
-
 // select the icons and tiles to be used
 const elementIcons = document.querySelectorAll(".icons__button");
 const tiles = document.querySelectorAll(".input");
@@ -13,25 +12,10 @@ const earthButton = document.querySelector("#earth-btn");
 const checkButton = document.querySelector(".check");
 const resetButton = document.querySelector(".reset");
 
-// GET CORRECT ICON
-// function to run an if else statement to select the correct icon when clicked
-
-const getIcon = () => {
-    for (let i = 0; i < tiles.length; i++) {
-        const tile = tiles[i];
-        if (tile.classList.contains("active")) {
-            if (fireButton.classList.contains("clicked")) {
-                tile.innerHTML = fireIcon;
-            } else if (windButton.classList.contains("clicked")) {
-                tile.innerHTML = windIcon;
-            } else if (waveButton.classList.contains("clicked")) {
-                tile.innerHTML = waveIcon
-            } else if (earthButton.classList.contains("clicked")) {
-                tile.innerHTML = earthIcon;
-            };
-        }
-    };
-};
+//  resetTiles function
+// function contains for loop to loop through nodelist of tiles
+// and select individual tiles. Then runs an if statement to check if innerHTML parameter
+// if resetHTML parameter is met then innerHTML becomes blank string
 
 const resetTiles = (resetHtml) => {
     for (let i = 0; i < tiles.length; i++) {
@@ -45,6 +29,9 @@ const resetTiles = (resetHtml) => {
     };
 
 };
+
+// RESET BUTTON
+// added event listener so that when reset button is clicked 
 
 resetButton.addEventListener("click", () => {
     resetTiles(true);
@@ -131,6 +118,25 @@ const winSolution = () => {
 
 };
 
+// GET CORRECT ICON
+// function to run an if else statement to select the correct icon when clicked
+
+const getIcon = () => {
+    for (let i = 0; i < tiles.length; i++) {
+        const tile = tiles[i];
+        if (tile.classList.contains("active")) {
+            if (fireButton.classList.contains("clicked")) {
+                tile.innerHTML = fireIcon;
+            } else if (windButton.classList.contains("clicked")) {
+                tile.innerHTML = windIcon;
+            } else if (waveButton.classList.contains("clicked")) {
+                tile.innerHTML = waveIcon
+            } else if (earthButton.classList.contains("clicked")) {
+                tile.innerHTML = earthIcon;
+            };
+        }
+    };
+};
 
 // NESTED LOOP TO ENSURE ONLY ONE ICON SELECTED AT A TIME
 // for loop to obtain individual icons from the node list and then inner for loop to remove clicked
@@ -148,26 +154,6 @@ for (let i = 0; i < elementIcons.length; i++) {
         icon.classList.toggle("clicked");
     });
 };
-
-
-// RESET BUTTON
-// for loop to get tile from tiles nodelist to be able to target inner HTML of tiles.
-// Applying eventlistener to the reset button so it can clear inner HTML of tiles.
-
-
-// const resetAll = () => {
-//     for (let i = 0; i < tiles.length; i++) {
-//         const tile = tiles[i];
-//         tile.innerHTML = "";
-//         tile.classList.remove("correct", "incorrect");
-//     };
-
-// };
-
-// resetButton.addEventListener("click", () => {
-//     resetAll();
-// });
-
 
 
 // NESTED LOOP TO ENSURE ONLY ONE TILE CAN BE SELECTED AT A TIME
@@ -191,6 +177,9 @@ for (let i = 0; i < tiles.length; i++) {
 
 checkButton.addEventListener("click", () => {
     winSolution();
+    // if (tile.classList.contains("correct")) {
+    //     alert("Congratulations! You solved it!")
+    // }
 });
 
 // When the erase button is clicked, it removes the HTML from the selected tile
