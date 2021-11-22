@@ -14,7 +14,7 @@ const resetButton = document.querySelector(".reset");
 
 //  resetTiles function
 // function contains for loop to loop through nodelist of tiles
-// and select individual tiles. Then runs an if statement to check if innerHTML parameter
+// and select individual tiles. Then runs an if statement to check if resetHTML parameter
 // if resetHTML parameter is met then innerHTML becomes blank string
 
 const resetTiles = (resetHtml) => {
@@ -31,12 +31,17 @@ const resetTiles = (resetHtml) => {
 };
 
 // RESET BUTTON
-// added event listener so that when reset button is clicked 
+// added event listener so that when reset button is clicked
+// the resetTiles function runs.
 
 resetButton.addEventListener("click", () => {
     resetTiles(true);
 });
 
+// winSolution function
+// resetTiles function runs as false, so if statement parameter is not met. 
+// variables are declared
+// if else statement is run to toggle add classList to provide feedback on if tiles are correct
 
 const winSolution = () => {
 
@@ -174,6 +179,7 @@ for (let i = 0; i < tiles.length; i++) {
 };
 
 // CHECK BUTTON
+// event listener added to check button so when it is clicked it runs the winSolution function
 
 checkButton.addEventListener("click", () => {
     winSolution();
