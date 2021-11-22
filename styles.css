@@ -139,16 +139,15 @@
 }
 
 .active {
-  background-color: aliceblue;
-  box-shadow: 2px 2px 2px 2px #030344;
+  background-color: #abcbe9;
 }
 
 .correct {
-  background-color: rgba(101, 252, 101, 0.521);
+  background-color: rgba(151, 243, 151, 0.548);
 }
 
 .incorrect {
-  background-color: rgba(255, 32, 32, 0.527);
+  background-color: rgba(255, 72, 72, 0.61);
 }
 
 .helper {
@@ -211,6 +210,10 @@
 .clicked {
   background-color: #91a8da;
   box-shadow: 2px 2px 2px darkslateblue;
+}
+
+.visible {
+  background-color: blue;
 }
 
 * {
