@@ -177,3 +177,10 @@
 .incorrect {
     background-color: $incorrectColour;
 }
+
+@media only screen and (max-width: 500px) {
+    .sudoku_grid {
+        height: 350px;
+        width: 350px;
+    }
+}

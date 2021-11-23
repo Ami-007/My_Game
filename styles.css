@@ -18,6 +18,11 @@ p {
   text-align: center;
 }
 
+@media only screen and (max-width: 500px) {
+  body {
+    min-width: 320px;
+  }
+}
 .sudoku_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -170,6 +175,12 @@ p {
   background-color: #ffa9a9;
 }
 
+@media only screen and (max-width: 500px) {
+  .sudoku_grid {
+    height: 350px;
+    width: 350px;
+  }
+}
 .helper {
   height: 20%;
   width: 100%;
@@ -231,4 +242,10 @@ p {
 .clicked {
   background-color: #abcbe9;
   box-shadow: 2px 2px 2px #00003f;
+}
+
+@media only screen and (max-width: 500px) {
+  .icons__button {
+    min-width: 50px;
+  }
 }

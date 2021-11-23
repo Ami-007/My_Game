@@ -13,6 +13,7 @@
         border-radius: 20px;
         font-family: $font-one;
 
+
         &:hover {
             box-shadow: $box-shadow;
         }
@@ -64,4 +65,10 @@
 .clicked {
     background-color:$activeColour;
     box-shadow: $box-shadow;
+}
+
+@media only screen and (max-width: 500px) {
+   .icons__button {
+       min-width: 50px;
+   }
 }
