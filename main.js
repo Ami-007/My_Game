@@ -12,10 +12,10 @@ const earthButton = document.querySelector("#earth-btn");
 const checkButton = document.querySelector(".check");
 const resetButton = document.querySelector(".reset");
 
-//  resetTiles function
-// function contains for loop to loop through nodelist of tiles
-// and select individual tiles. Then runs an if statement to check if resetHTML parameter
-//  is met then innerHTML becomes blank string
+// resetTiles function
+// function takes resetHTML parameter so that it can be reused in different scenarios. 
+// Funciton selects individual tiles. Then runs an if statement to check if resetHTML parameter
+// is met, then innerHTML becomes blank string.
 
 const resetTiles = (resetHtml) => {
     for (let i = 0; i < tiles.length; i++) {
@@ -31,17 +31,18 @@ const resetTiles = (resetHtml) => {
 };
 
 // RESET BUTTON
-// added event listener so that when reset button is clicked
-// the resetTiles function runs.
+// added event listener so that when reset button is clicked the resetTiles function runs.
+// reset button also needs to reset innerHTML so it passes resetTiles as true.
 
 resetButton.addEventListener("click", () => {
     resetTiles(true);
 });
 
 // winSolution function
-// resetTiles function runs as false, so if statement parameter is not met. 
+// resetTiles function passes as false, so if statement parameter is not met, so we don't remove innnerHTML and remove placed elements.
 // variables are declared
-// if else statement is run to toggle add classList to provide feedback on if tiles are correct
+// if else statement is run to add classList to provide feedback on if tiles are correct.
+// This function is currently not optimised. Planned implementation of dictionary.
 
 const winSolution = () => {
 
