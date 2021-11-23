@@ -34,13 +34,22 @@ The game consists of:
 
 <li> A timer so players can see how long they’re taking. </li>
 
+<li> Add an erase button to clear a selected tile </li>
+
 <li> Harder puzzles/selection of difficulties. </li>
+
+<li> Would like to randomise icon placement on reset, this requires rules to be placed on icon placement
+        otherwise the game might not have clues in the right place to solve.</li>
+
+<li> Would like to add media queries so that it scales down better on mobile, than just using percentages to keep it flexible</li>
 </ul>
 <br>
 
 <h1>Bugs:</h1>
 
 Element buttons cannot be toggled off at the moment, they will stay highlighted/selected until a new element button is clicked.
+Icon and tiles classLists need to be reset when reset button is clicked.
+
 
 
 
